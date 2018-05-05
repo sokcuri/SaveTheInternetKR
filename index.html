@@ -1,0 +1,122 @@
+﻿<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>Save the Internet of Korea</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Save the internet of Korea">
+	<meta property="og:title" content="Save the internet of Korea">
+	<meta property="og:image" content="http://savetheinternet.kr/images/img_01.png">
+	<meta property="og:description" content="검열의 위협에 몰려있는 인터넷을 구해주세요">
+	
+	<!-- twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" value="Save the internet of Korea">
+	<meta name="twitter:description" value="검열의 위협에 몰려있는 인터넷을 구해주세요">
+	<meta name="twitter:image" value="http://savetheinternet.kr/images/img_01.png">
+
+	<!-- font -->
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic" rel="stylesheet">
+	<style>
+		body {
+			font-family: 'Nanum Gothic', sans-serif;
+			width: 600px;
+			margin: 0 auto;
+			padding: 0px 20px 40px 20px;
+			word-break: keep-all;
+			line-height: 1.6em;
+		}
+		h1 {
+			font-family: avenir, 'Nanum Gothic', helvetica, sans-serif;
+			padding: 200px 0px 20px 0px;
+			margin: 0px;
+			text-align: center;
+			font-weight: 200;
+			font-size: 3.2em;
+			line-height: 1.1em;
+			background: url('./images/img_02.png') center top no-repeat;
+			background-size: 380px auto;
+			color: #2CA6A4;
+		}
+		
+		h2 {
+			font-family: avenir, 'Nanum Gothic', helvetica, sans-serif;
+			font-weight: 200;
+			font-size: 1.8em;
+			margin-top: 50px;
+			line-height: 1.1em;
+		}
+
+		a {
+			text-decoration: none;
+			color: #F55D3E;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		.hashtag {
+			color: #1c94e0;
+		}
+		
+	</style>
+	<body>
+		<h1>검열의 위기에 몰려있는<br>인터넷을 구해주세요</h1>
+		<h2>배경</h2>
+		<p>
+			<a href="http://www.mcst.go.kr/web/s_notice/press/pressView.jsp?pSeq=16672" target="_blank">2018년 5월 2일</a>, 대한민국 정부부처인 문화체육관광부는 불법 웹툰 사이트의 저작권 침해를 근절하기 위한 저작권 침해 방지 대책을 발표하였습니다.
+			</p><ol>
+				<li>저작권 침해 사이트는 저작권보호심의위원회 심의만으로 접속 차단</li>
+				<li>https를 사용하는 사이트를 차단하기 위해 DNS 오염 기법을 이용한 차단을 실시하고 SNI 필터링을 도입할 예정</li>
+			</ol>
+		<p></p>
+		<p>
+			*DNS 오염: DNS 서버는 도메인 주소를 실제 컴퓨터가 접속할 수 있는 IP 주소로 바꾸어주는데, 이 결과를 조작해 Warning 페이지로 가게끔 만드는 해킹 기법.
+		</p>
+		<p>
+			*SNI: 웹 브라우저는 HTTPS로 접속할 때 인증서를 확인하는데, 하나의 IP에 여러개의 도메인을 서비스하기 때문에 어떤 도메인을 가진 서버에 접속할 것이라고 일러주는 SNI가 도입되었다. 이 SNI는 평문으로 전송되기 때문에 검열이 가능하다.
+		</p>
+		<h2>어떤 사람들이 영향을 받나요?</h2>
+		<p>
+			대한민국에서 인터넷을 사용하는 국적 불문의 모든 사람들이 영향을 받습니다. KT, SKT, LG U+과 같은 인터넷 서비스 업체(ISP)의 백본(인터넷 기간망)에서 차단하기 때문에 디바이스의 종류나 인터넷 서비스 종류에 관계없이 모두 적용됩니다.
+		</p>
+		<h2>어떤 점이 바뀌는 것인가요?</h2>
+		<p>
+			저작권보호심의위원회에서 접속 차단이 결정된 사이트에 대해서 신속하게 접속이 차단됩니다. 보안 프로토콜(https)을 이용한 서버의 접속 차단을 위해 DNS 오염(DNS pollution) 기법을 이용한 차단을 실시하고 SNI 필드 차단(SNI Field Filtering) 기술이 도입됩니다.
+		</p>
+		<h2>왜 이런 일을 하는 것인가요?</h2>
+		<p>
+			최근 해외 사이트를 거점으로 저작권 침해가 광범위하게 이루어지고 있어 웹툰과 같은 저작권에 민감한 업계가 상당한 타격을 받고 있는 것이 주 원인입니다. 저작권 침해에 한해 심의기구를 일원화해 피해를 줄이고, 보안 프로토콜(https)을 통한 우회 접속을 차단하기 위함입니다.
+		</p>
+		<h2>그렇다면 문제가 뭔가요?</h2>
+		<p>
+			저작권 침해를 근절하고자 하는 취지는 좋습니다만, 해당 기술을 활용하면 국가는 인터넷 사용자가 언제 무슨 웹사이트를 이용하고 있는지 손쉽게 감시할 수 있게 되며, 이는 일반인의 사찰이나 감시 목적으로 활용될 여지가 있습니다.
+		</p>
+		<p>
+			접속하는 사이트가 차단된 사이트인지를 확인하기 위해서는 통신망을 통해 전송되는 패킷들을 모두 열어봐야 합니다. 때문에 헌법으로 보장된 통신 비밀이 침해될 여지가 다분하며, 해당 기술들을 활용하면 영장 없이 통신을 조작하는 등 악용될 수 있습니다.
+		</p>
+		<h2>검열을 우회할 수 있는 방법이 있나요?</h2>
+		<p>
+			DNS on HTTPS나 프록시 서버, VPN 등의 방법을 통해 검열을 여러 방법으로 우회할 수 있습니다. 이러한 검열을 우회하거나 회피하는 행위를 처벌하지 않는 한 해결되지 않습니다. 이는 접속 차단과 같은 검열만이 근본적인 해결책이 아니라는 것을 보여줍니다. 불법 사이트를 이용하려는 사람들은 약간의 귀찮음만 감수하면 되지만, 피해는 많은 사람들이 지게 됩니다.
+		</p>
+		<h2>그렇다면 어떻게 해결하는 것이 좋을까요?</h2>
+		<p>
+			많은 저작권 침해 사이트들은 광고를 통해 수입을 얻고 운영 자금을 마련합니다. 지금 필요한 것은 국민이 어떤 웹사이트를 이용하는지 감시하고 검열하는 시대착오적인 방법이 아닙니다. 철저한 수사 공조와 운영 자금 차단과 같은 방법을 통해 불법 사이트들을 폐쇄시키는 것이 근본적인 해결책입니다.
+		</p>
+		<h2>어떻게 도울 수 있을까요?</h2>
+		<ul>
+			<li>주변의 친구들이나 사람들과 인터넷 검열에 대해 이야기하세요</li>
+			<li><a href="https://www1.president.go.kr/petitions/219367" target="_blank">인터넷 검열 반대 청와대 청원</a>에 참여해 주세요</li>
+			<li>트위터나 페이스북 등 SNS 사이트에서 <span class="hashtag">#SaveTheInternetKR</span> 해시태그를 달아 검열 반대 의견을 남겨주세요</li>
+			<li>정부 또는 국회, 언론에서 검열에 대해 경각심을 가질 수 있도록 알려 주세요</li>
+			<li><a href="https://savetheinternet.kr">SaveTheInternet.kr</a> 사이트를 널리 퍼뜨려 주세요</li>
+		</ul>
+		<p>검열은 어떤 문제도 해결해주지 않습니다. 단순히 눈 앞의 문제를 치워줄 뿐입니다.</p>
+		<p>감사합니다.</p>
+	</body>
+</head>
+</html>
